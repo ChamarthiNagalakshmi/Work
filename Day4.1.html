@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>project</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+<style>
+.image{
+    background-image: url("h1.jpg");
+     
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    h2{
+      text-align:center;
+      padding: 20px;
+    }
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  display:flex;
+  justify-content:space-evenly;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: pink;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {box-sizing: border-box}
+
+.progress
+ {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg bg-primary-subtle sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Nagalakshmi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<div class="container-fluid" style=" background-color: lightgrey;">
+	<div class="row">
+		<div class="col" style="text-align:center;padding-top: 100px;">
+			<h1>Better Solutions For Your Business</h1>
+       <p>We are team of talented designers making websites with Bootstrap</p>
+       <input type="button" value="Get Started">
+       <input type="button" value="Watch video">
+     </div>
+		<div class="col">
+			<img src="image1.jpeg" style="text-align: center;height: 500px;padding-left:150px;">
+    </div>
+  </div>
+</div>
+<!--first-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1>ABOUT US</h1>
+      <p><i>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+<p><i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+<p><i>Duis aute irure dolor in reprehenderit in voluptate velit.</i></p>
+<p><i>Ullamco laboris nisi ut aliquip ex ea commodo.</i></p>
+    </div> 
+    <div class="col">
+      <p style="padding-top: 80px;"><i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
+      <input type="submit" value="Read more">
+      </div> 
+  </div>
+</div>
+<!--second-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col" style="text-align: center;padding-top: 100px;"> 
+      <h4 >Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h4>
+        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</i></p> 
+    </div>
+    <div class="col">
+      <img src="image2.jpeg" style="text-align: center;height: 400px;padding-left:150px;">
+    </div>
+  </div>
+</div>
+<!--third-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <img src="image3.jpeg" style="text-align: center;height: 400px;">
+    </div>
+    <div class="col">
+      <h2>Voluptatem dignissimos provident quasi corporis voluptas</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+      <p>HTML</p>
+      <div class="progress">
+        <div class="skills html"></div>
+      </div>
+
+      <p>CSS</p>
+      <div class="progress">
+        <div class="skills css"></div>
+      </div>
+
+      <p>JavaScript</p>
+      <div class="progress">
+        <div class="skills js"></div>
+      </div>
+
+      <p>PHP</p>
+      <div class="progress">
+        <div class="skills php"></div>
+      </div>
+    </div>
+  </div>  
+</div>
+<div class="container-fluid">
+    <h3>SERVICES</h3>
+    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+  <div class="row">
+        <!--COL 1-->
+        <div class="col">
+          <div class="card bg-white shadow p-3 mb-5 rounded border-0">
+            <div class="card-body p-3">
+              <span class="material-symbols-outlined">
+                 vital_signs
+                </span>
+              <h4 class="card-title">Lorem Ipsum</h4>
+              <p class="card-text">
+                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+        </div>
+
+         <!--COL 2-->
+         <div class="col">
+          <div class="card bg-white shadow p-3 mb-5 rounded border-0">
+            <div class="card-body p-3">
+              <span class="material-symbols-outlined">
+                network_node
+                </span>
+              <h4 class="card-title">
+                Sed ut perspici</h4>
+              <p class="card-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+        </div>
+
+         <!--COL 3-->
+         <div class="col">
+          <div class="card bg-white shadow p-3 mb-5 rounded border-0">
+            <div class="card-body p-3">
+              <span class="material-symbols-outlined">
+                date_range
+                </span>
+              <h4 class="card-title">Magni Dolores</h4>
+              <p class="card-text">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+        </div>
+
+         <!--COL 4-->
+         <div class="col">
+          <div class="card bg-white shadow p-3 mb-3 rounded border-0">
+            <div class="card-body p-3">
+              <span class="material-symbols-outlined">
+                podcasts
+                </span>
+              <h4 class="card-title">Nemo Enim</h4>
+              <p class="card-text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--SIXTH CONTAINER-->
+    </div>
+<div class="container-fluid p-5 mb-5 bg-primary  image">
+  <div class="row bg-transparent align-items-center p-5 my-5">
+    <div class="col text-light">
+      <h1>Call To Action</h1>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col">
+      <input type="button" value="Call To Action">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <h3 style="text-align: center;">Portfolio </h3>
+    <p style="text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+
+</p>
+    <div class="col">
+      <img src="port1.jpg" class="img-thumbnail" alt="..." style="width: 885px;height: 500px;">
+    </div>
+    <div class="col">
+      <img src="port3.jpg" class="img-thumbnail" alt="..." style="width: 1302px;height: 500px">
+    </div>
+    <div class="col">
+      <img src="port6.jpg" class="img-thumbnail" alt="..." style="width: 579px;height: 500px">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="port2.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 861">
+    </div>
+    <div class="col">
+      <img src="port4.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 861">
+    </div>
+    <div class="col">
+      <img src="port5.jpg" class="img-thumbnail" alt="..." style="width: 579px;height: 620px">
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="port7.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 861">
+    </div>
+    <div class="col">
+      <img src="port8.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 861">
+    </div>
+    <div class="col">
+      <img src="port9.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 861">
+    </div> 
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h2> Contact us </h2>
+    <div class="col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193559.13256472183!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1721581362520!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col">
+      <footer class="bg-body-tertiary text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <form action="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        
+            <strong>Sign up for our newsletter:</strong><br>
+          
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 col-12 mb-4 mb-md-0">
+          <!-- Email input -->
+          
+            Enter email:
+            <input type="email" id="form5Example22" class="form-control" /><br>
+            Enter ur name:
+            <input type="text" name="name"><br>
+            Message:
+            <textarea>hellooo, feel free to text</textarea>
+        
+        <!--Grid column-->
+
+        <!--Grid column-->
+        
+          <!-- Submit button -->
+          <button data-mdb-ripple-init type="button" class="btn btn-primary mb-4">
+            Subscribe
+          </button>
+       </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </div>
+  <!-- Grid container --> 
+</div>
+</div>
+</div>
+<div class="container p-5 mb-5 text-align-center">
+  <div class="row">
+    <div class="col">
+      <h1 >Prime OR Not</h1>
+      Enter a number:<input type="text" id="inputNumber" name="inputNumber"><br>
+    <button onclick="checkPrime()">Check</button>
+    <br><br>
+    <div id="outputResult"></div>
+
+ <script>
+        function isPrime(num) {
+            if (num <= 1) return false;  
+            if (num === 2) return true;   
+            if (num % 2 === 0) return false;  
+
+           
+            for (let i = 3; i <= Math.sqrt(num); i += 2) {
+                if (num % i === 0) return false;  
+            }
+            return true; 
+        }
+
+        function checkPrime() {
+            let c = document.getElementById("inputNumber").value;
+            let k = document.getElementById("outputResult");
+
+            // Convert input value to integer
+            let num = parseInt(c);
+
+            if (isNaN(num)) {
+                k.textContent = "Please enter a valid number.";
+            } else {
+                if (isPrime(num)) {
+                    k.textContent = num+'is a prime number.';
+                } else {
+                    k.textContent = num+'is not a prime number.';
+                }
+            }
+        }
+    </script>
+
+    </div>
+    <div class="col">
+      <h1>Leap Year Or Not</h1>
+      <label for="inputYear">Enter a year:</label>
+    <input type="text" id="inputYear" name="inputYear"><br>
+    <button onclick="checkLeapYear()">Check</button>
+    <br><br>
+    <div id="outputResult"></div>
+
+ <script>
+        function isLeapYear(year) {
+            // Leap year logic
+            if (year % 4 === 0) {
+                if (year % 100 === 0) {
+                    if (year % 400 === 0) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                } else {
+                    return true; 
+                }
+            } else {
+                return false; 
+            }
+        }
+        function checkLeapYear() {
+            let c= document.getElementById("inputYear").value;
+            let k= document.getElementById("outputResult");
+            let year = parseInt(c);
+            if (isNaN(year)) {
+                k.textContent = "Please enter a valid year.";
+            } else {
+                if (isLeapYear(year)) {
+                    k.textContent = year+"is a leap year.";
+                } else {
+                    k.textContent = year+"is not a leap year.";
+                }
+            }
+        }
+    </script>
+
+    </div>
+    <div class="col">
+      <h1>Palindrome Or Not</h1>
+<label for="inputText">Enter a number or string:</label>
+    <input type="text" id="inputText" name="inputText"><br>
+    <button onclick="checkPalindrome()">Check</button>
+    <br><br>
+    <div id="outputResult"></div>
+
+   <script>
+        function isPalindrome(input) {
+            let cleanedInput = input.toLowerCase().replace(/[\W_]/g, '');
+            let reversedInput = cleanedInput.split('').reverse().join('');
+            return cleanedInput === reversedInput;
+        }
+
+        function checkPalindrome() {
+            let input = document.getElementById("inputText").value;
+            let o= document.getElementById("outputResult");
+
+            if (isPalindrome(input)) {
+                o.textContent = input+" is a palindrome.";
+            } else {
+                o.textContent = input+" is not a palindrome.";
+            }
+        }
+    </script>
+
+    </div>
+
+  </div>
+  
+
+
+</div>
+
+
+
+
+
+<div class="container">
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Chamarthi Nagalakshmi</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+		.first
+		{
+			display: flex;
+			justify-content: space-evenly;
+			background-color: lightgoldenrodyellow;
+		}
+		.login
+		{
+			padding: 100px;
+			
+		}
+		.Register
+		{
+			padding: 100px;
+		}
+		#margins
+		{
+			margin-top: 20px;
+		}	

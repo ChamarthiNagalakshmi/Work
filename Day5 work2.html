@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <label for="inputText">Enter a number or string:</label>
+    <input type="text" id="inputText" name="inputText">
+    <button onclick="checkPalindrome()">Check</button>
+    <br><br>
+    <div id="outputResult"></div>
+</body>
+   <script>
+        function isPalindrome(input) {
+            let cleanedInput = input.toLowerCase().replace(/[\W_]/g, '');
+            let reversedInput = cleanedInput.split('').reverse().join('');
+            return cleanedInput === reversedInput;
+        }
+
+        function checkPalindrome() {
+            let input = document.getElementById("inputText").value;
+            let o= document.getElementById("outputResult");
+
+            if (isPalindrome(input)) {
+                o.textContent = input+" is a palindrome.";
+            } else {
+                o.textContent = input+" is not a palindrome.";
+            }
+        }
+    </script>
+</html>
