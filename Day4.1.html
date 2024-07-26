@@ -10,8 +10,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
-
 <style>
 .image{
     background-image: url("h1.jpg");
@@ -25,27 +23,19 @@
       text-align:center;
       padding: 20px;
     }
-
-
-
-
 ul {
   list-style-type: none;
   margin: 10px;
   padding: 10px;
   display:flex;
   justify-content:space-evenly;
-
 }
-
 li a:hover, .dropdown:hover .dropbtn {
   background-color: pink;
 }
-
 li.dropdown {
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -54,7 +44,6 @@ li.dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -62,92 +51,59 @@ li.dropdown {
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1;}
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 * {box-sizing: border-box}
-
 .progress
  {
   width: 100%;
   background-color: #ddd;
 }
-
 .skills {
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
 }
-
 .html {width: 90%; background-color: #04AA6D;}
 .css {width: 80%; background-color: #2196F3;}
 .js {width: 65%; background-color: #f44336;}
 .php {width: 60%; background-color: #808080;}
-
-
-
-
 </style>
 </head>
 <body>
 
-
-
-    <nav class="navbar navbar-expand-lg bg-primary-subtle sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Nagalakshmi</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a>
-                    </ul>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
 <div class="container-fluid" style=" background-color: lightgrey;">
+
+  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">About us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Services</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Call to action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5">Portfolio</a></li>
+         <li><a class="dropdown-item" href="#scrollspyHeading6" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Contact us</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
 	<div class="row">
+    <h1 id="scrollspyHeading1">Home</h1>
 		<div class="col" style="text-align:center;padding-top: 100px;">
-			<h1>Better Solutions For Your Business</h1>
+
+			<h3>Better Solutions For Your Business</h3>
        <p>We are team of talented designers making websites with Bootstrap</p>
        <input type="button" value="Get Started">
        <input type="button" value="Watch video">
@@ -156,12 +112,12 @@ li.dropdown {
 			<img src="image1.jpeg" style="text-align: center;height: 500px;padding-left:150px;">
     </div>
   </div>
-</div>
+
 <!--first-->
-<div class="container-fluid">
+
   <div class="row">
     <div class="col">
-      <h1>ABOUT US</h1>
+      <h1 id="scrollspyHeading2">ABOUT US</h1>
       <p><i>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
@@ -174,9 +130,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       <input type="submit" value="Read more">
       </div> 
   </div>
-</div>
+
 <!--second-->
-<div class="container-fluid">
+
   <div class="row">
     <div class="col" style="text-align: center;padding-top: 100px;"> 
       <h4 >Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h4>
@@ -186,9 +142,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       <img src="image2.jpeg" style="text-align: center;height: 400px;padding-left:150px;">
     </div>
   </div>
-</div>
+
 <!--third-->
-<div class="container-fluid">
+
   <div class="row">
     <div class="col">
       <img src="image3.jpeg" style="text-align: center;height: 400px;">
@@ -218,9 +174,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       </div>
     </div>
   </div>  
-</div>
-<div class="container-fluid">
-    <h3>SERVICES</h3>
+
+    <h3 id="scrollspyHeading3">SERVICES</h3>
     <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
   <div class="row">
         <!--COL 1-->
@@ -281,21 +236,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </div>
       </div>
       <!--SIXTH CONTAINER-->
-    </div>
-<div class="container-fluid p-5 mb-5 bg-primary  image">
-  <div class="row bg-transparent align-items-center p-5 my-5">
+
+  <div class="row bg-transparent align-items-center p-5 my-5 image">
     <div class="col text-light">
-      <h1>Call To Action</h1>
+      <h1 id="scrollspyHeading4">Call To Action</h1>
       <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="col">
       <input type="button" value="Call To Action">
     </div>
   </div>
-</div>
-<div class="container">
+
+
   <div class="row">
-    <h3 style="text-align: center;">Portfolio </h3>
+    <h3 id="scrollspyHeading5" style="text-align: center;">Portfolio </h3>
     <p style="text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
 
 </p>
@@ -317,7 +271,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       <img src="port4.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 861">
     </div>
     <div class="col">
-      <img src="port5.jpg" class="img-thumbnail" alt="..." style="width: 579px;height: 620px">
+      <img src="port5.jpg" class="img-thumbnail" alt="..." style="width: 579px;height: 550px">
     </div>
     
   </div>
@@ -329,14 +283,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       <img src="port8.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 861">
     </div>
     <div class="col">
-      <img src="port9.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 861">
+      <img src="port9.jpg" class="img-thumbnail" alt="..." style="width: 579;height: 871">
     </div> 
   </div>
-</div>
 
-<div class="container">
+
+
   <div class="row">
-    <h2> Contact us </h2>
+    <h2 id="scrollspyHeading6"> Contact us </h2>
     <div class="col">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193559.13256472183!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1721581362520!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -381,8 +335,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
   <!-- Grid container --> 
 </div>
 </div>
-</div>
-<div class="container p-5 mb-5 text-align-center">
+
+
   <div class="row">
     <div class="col">
       <h1 >Prime OR Not</h1>
@@ -496,16 +450,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     </div>
 
   </div>
-  
-
-
-</div>
-
-
-
-
-
-<div class="container">
   <!-- Footer -->
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
   <!-- Section: Social media -->
@@ -623,11 +567,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Chamarthi Nagalakshmi</a>
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Chamarthi Nagalakhmi</a>
   </div>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+</div>
 </div>
 </body>
 </html>
